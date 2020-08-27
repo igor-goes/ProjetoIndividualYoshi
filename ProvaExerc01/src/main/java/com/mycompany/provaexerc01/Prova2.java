@@ -39,17 +39,24 @@ public class Prova2 extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         precoeconomia = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        mensagemComMensal = new javax.swing.JLabel();
+        mensagemComAnual = new javax.swing.JLabel();
         resultadomensal = new javax.swing.JLabel();
         resultadoanual = new javax.swing.JLabel();
         resultadoporcentagem = new javax.swing.JLabel();
         produtomensalmente = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        mensagemSemAnual = new javax.swing.JLabel();
+        mensagemSemMensal = new javax.swing.JLabel();
         semsolucao = new javax.swing.JLabel();
         comsolucao = new javax.swing.JLabel();
+        Semresultadomensal = new javax.swing.JLabel();
+        comLucro = new javax.swing.JLabel();
+        Semresultadoanualmente = new javax.swing.JLabel();
+        mensagemLucroMensal = new javax.swing.JLabel();
+        lucroMensal = new javax.swing.JLabel();
+        mensagemLucroAnual = new javax.swing.JLabel();
+        lucroAnual = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -78,44 +85,88 @@ public class Prova2 extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel1.setText("Bem Vindo a calculadora ");
 
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         jLabel2.setText("Preço do Produto");
 
-        jLabel3.setText("Preço da solução");
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jLabel3.setText("Preço da solução(mensalmente)");
 
+        botao.setBackground(new java.awt.Color(102, 102, 102));
+        botao.setForeground(new java.awt.Color(0, 51, 204));
         botao.setText("Ver o lucro");
+        botao.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         botao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botaoActionPerformed(evt);
             }
         });
 
+        precoProduto.setBackground(new java.awt.Color(0, 51, 204));
+        precoProduto.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        precoProduto.setForeground(new java.awt.Color(255, 255, 255));
+        precoProduto.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(255, 255, 255), new java.awt.Color(255, 255, 255), new java.awt.Color(255, 255, 255), new java.awt.Color(255, 255, 255)));
+
+        precosolucao1.setBackground(new java.awt.Color(0, 51, 204));
+        precosolucao1.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        precosolucao1.setForeground(new java.awt.Color(255, 255, 255));
+        precosolucao1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(255, 255, 255), new java.awt.Color(255, 255, 255), new java.awt.Color(255, 255, 255), new java.awt.Color(255, 255, 255)));
         precosolucao1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 precosolucao1ActionPerformed(evt);
             }
         });
 
-        jLabel5.setText("Economia da solução");
+        jLabel5.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jLabel5.setText("Lucro(por cada produto)");
 
+        precoeconomia.setBackground(new java.awt.Color(0, 51, 204));
+        precoeconomia.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        precoeconomia.setForeground(new java.awt.Color(255, 255, 255));
+        precoeconomia.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(255, 255, 255), new java.awt.Color(255, 255, 255), new java.awt.Color(255, 255, 255), new java.awt.Color(255, 255, 255)));
+
+        jLabel7.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         jLabel7.setText("Porcentagem");
 
-        jLabel8.setText("Economia mensal");
+        mensagemComMensal.setText("Mensalmente :");
 
-        jLabel9.setText("Economia anual");
+        mensagemComAnual.setText("Anualmente :");
 
-        resultadoanual.setText("resultadoanual");
+        resultadomensal.setText("R$");
 
-        resultadoporcentagem.setText("jLabel10");
+        resultadoanual.setText("R$");
 
-        jLabel10.setText("Quantidade produto vendo mensalmente");
+        produtomensalmente.setBackground(new java.awt.Color(0, 51, 204));
+        produtomensalmente.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        produtomensalmente.setForeground(new java.awt.Color(255, 255, 255));
+        produtomensalmente.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(255, 255, 255), new java.awt.Color(255, 255, 255), new java.awt.Color(255, 255, 255), new java.awt.Color(255, 255, 255)));
 
-        jLabel12.setText("Valor Bruto");
+        jLabel10.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jLabel10.setText("Quantidade produto vendido mensalmente");
 
-        jLabel13.setText("Mensalmente");
+        mensagemSemAnual.setText("Anualmente :");
 
+        mensagemSemMensal.setText("Mensalmente :");
+
+        semsolucao.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         semsolucao.setText("SEM NOSSA SOLUÇÃO");
 
-        comsolucao.setText("jLabel6");
+        comsolucao.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        comsolucao.setText("COM NOSSA SOLUÇÃO");
+
+        Semresultadomensal.setText("R$");
+
+        comLucro.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        comLucro.setText("LUCRO");
+
+        Semresultadoanualmente.setText("R$");
+
+        mensagemLucroMensal.setText("Mensalmente :");
+
+        lucroMensal.setText("R$");
+
+        mensagemLucroAnual.setText("Anualmente :");
+
+        lucroAnual.setText("R$");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -125,16 +176,10 @@ public class Prova2 extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addComponent(produtomensalmente, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(resultadoporcentagem)
-                        .addGap(53, 53, 53))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabel4)
                                 .addGap(220, 220, 220))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
@@ -143,89 +188,125 @@ public class Prova2 extends javax.swing.JFrame {
                         .addComponent(jLabel7)
                         .addGap(41, 41, 41))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(comsolucao)
-                        .addGap(173, 173, 173)
-                        .addComponent(semsolucao, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
-                        .addGap(109, 109, 109))
+                        .addComponent(precosolucao1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(66, 540, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(precoeconomia, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(mensagemSemAnual)
+                                        .addGap(8, 8, 8)
+                                        .addComponent(Semresultadoanualmente))
+                                    .addComponent(semsolucao, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(mensagemSemMensal)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(Semresultadomensal, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(56, 56, 56)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(35, 35, 35)
+                                        .addComponent(botao))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(35, 35, 35)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(mensagemComMensal)
+                                                    .addComponent(mensagemComAnual))
+                                                .addGap(18, 18, 18)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(resultadoanual)
+                                                    .addComponent(resultadomensal, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(18, 18, 18)
+                                                .addComponent(comsolucao, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(mensagemLucroAnual, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(lucroAnual))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                    .addComponent(comLucro)
+                                                    .addComponent(mensagemLucroMensal))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(lucroMensal))))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(produtomensalmente, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(resultadoporcentagem)))
+                        .addGap(53, 53, 53))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(precoeconomia, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(29, 29, 29)
-                                .addComponent(jLabel1))
                             .addComponent(jLabel3)
-                            .addComponent(jLabel10)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(precosolucao1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(75, 75, 75)
-                                .addComponent(botao))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel8)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(resultadomensal, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel9)
-                                        .addGap(26, 26, 26)
-                                        .addComponent(resultadoanual)))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel12)
-                                    .addComponent(jLabel13))))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel10))
+                        .addGap(0, 0, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(206, 206, 206))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addComponent(jLabel1)
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel4)
                             .addComponent(jLabel7))
-                        .addGap(40, 40, 40))
-                    .addGroup(layout.createSequentialGroup()
+                        .addGap(20, 20, 20))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(precoProduto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel10)
-                        .addGap(6, 6, 6)))
+                        .addComponent(precoProduto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(resultadoporcentagem)
                     .addComponent(produtomensalmente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(9, 9, 9)
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(precoeconomia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(4, 4, 4)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(precosolucao1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(precoeconomia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(9, 9, 9)
+                .addComponent(botao)
+                .addGap(22, 22, 22)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botao)
-                    .addComponent(precosolucao1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(10, 10, 10)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(comsolucao)
                     .addComponent(semsolucao)
-                    .addComponent(comsolucao))
-                .addGap(18, 18, 18)
+                    .addComponent(comLucro))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(mensagemSemMensal)
+                    .addComponent(mensagemComMensal)
+                    .addComponent(resultadomensal, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+                    .addComponent(mensagemLucroMensal)
+                    .addComponent(lucroMensal)
+                    .addComponent(Semresultadomensal))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(resultadomensal, javax.swing.GroupLayout.DEFAULT_SIZE, 20, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel13)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(resultadoanual)
-                    .addComponent(jLabel12))
-                .addContainerGap(13, Short.MAX_VALUE))
+                        .addComponent(mensagemSemAnual)
+                        .addComponent(Semresultadoanualmente)
+                        .addComponent(mensagemLucroAnual)
+                        .addComponent(lucroAnual))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(mensagemComAnual)
+                        .addComponent(resultadoanual)))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         pack();
@@ -241,8 +322,42 @@ public class Prova2 extends javax.swing.JFrame {
         Double QntMensal = Double.valueOf(produtomensalmente.getText());
         Double Economia = Double.valueOf(precoeconomia.getText());
         
+        Double Economia1 = Economia * QntMensal;
+        Double PrecoSolucao1 = PrecoSolucao * 12 ;
         Double salario = Produto * QntMensal ;
-        resultadomensal.setText(String.format("R$%.1f",(salario)));
+        Double anual = salario * 12 ;
+        Semresultadomensal.setText(String.format("R$%.2f",(salario)));
+        Semresultadoanualmente.setText(String.format("R$%.2f",(anual)));
+        
+        Double mensal = salario + Economia1 - PrecoSolucao ;
+        Double anualSolucao = (mensal * 12) + PrecoSolucao1 ;
+        
+        resultadomensal.setText(String.format("R$ %.2f",(mensal)));
+        resultadoanual.setText(String.format("R$ %.2f",(anualSolucao)));
+        
+        Double Lucro = mensal - salario ;
+        Double LucroAnual = anualSolucao - anual ;
+        
+        lucroMensal.setText(String.format("R$ %.2f",(Lucro)));
+        lucroAnual.setText(String.format("R$ %.2f",(LucroAnual)));
+        
+        semsolucao.setText("Sem Solução");
+        mensagemSemMensal.setText("Mensalmente :");
+        mensagemSemAnual.setText("Anual :");
+        
+        comsolucao.setText("Com Solução");
+        mensagemComMensal.setText("Mensalmente :");
+        mensagemComAnual.setText("Anual :");
+        
+        comLucro.setText("Lucro");
+        mensagemLucroMensal.setText("Mensalmente :");
+        mensagemLucroAnual.setText("Anual :");
+        
+        Double porcentagem = (Lucro  * 100) / salario;
+        
+        resultadoporcentagem.setText(String.format("%.0f %%",(porcentagem)));
+        
+        
     }//GEN-LAST:event_botaoActionPerformed
 
     /**
@@ -281,21 +396,28 @@ public class Prova2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Semresultadoanualmente;
+    private javax.swing.JLabel Semresultadomensal;
     private javax.swing.JButton botao;
+    private javax.swing.JLabel comLucro;
     private javax.swing.JLabel comsolucao;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lucroAnual;
+    private javax.swing.JLabel lucroMensal;
+    private javax.swing.JLabel mensagemComAnual;
+    private javax.swing.JLabel mensagemComMensal;
+    private javax.swing.JLabel mensagemLucroAnual;
+    private javax.swing.JLabel mensagemLucroMensal;
+    private javax.swing.JLabel mensagemSemAnual;
+    private javax.swing.JLabel mensagemSemMensal;
     private javax.swing.JTextField precoProduto;
     private javax.swing.JTextField precoeconomia;
     private javax.swing.JTextField precosolucao1;
